@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: 220, 100%, 68%;
+  --background-color: 230, 14%, 8%;
+  --text-primary: 0, 0%, 100%;
+
+  --font-family: "Arial", sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: hsl(var(--background-color));
+  color: hsl(var(--text-primary));
+}
+
+img {
+  width: 100%;
+  height: auto;
+}

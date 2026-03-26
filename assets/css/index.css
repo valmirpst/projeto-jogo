@@ -1,0 +1,7 @@
+/* Estilos globais */
+@import url("./globals.css");
+
+/* Componentes reutilizáveis */
+@import url("./components/common.css");
+@import url("./components/header.css");
+@import url("./components/footer.css");
