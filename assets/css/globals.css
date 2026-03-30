@@ -5,12 +5,14 @@
 }
 
 :root {
-  --primary-color: 220, 100%, 68%;
+  --primary-color: 220, 100%, 80%;
+  --primary-color-hover: 220, 100%, 72%;
+
   --background-color: 230, 14%, 8%;
   --text-primary: 0, 0%, 100%;
 
-  --primary-font: "Space Grotesk", sans-serif;
-  --secondary-font: "Manrope", sans-serif;
+  --primary-font: "Manrope", sans-serif;
+  --secondary-font: "Space Grotesk", sans-serif;
 }
 
 body {
@@ -22,4 +24,14 @@ body {
 img {
   width: 100%;
   height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: hsl(var(--primary-color));
+  }
 }
