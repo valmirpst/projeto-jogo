@@ -1,0 +1,9 @@
+.button-base {
+  font-size: 14px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
