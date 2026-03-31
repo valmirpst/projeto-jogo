@@ -19,6 +19,7 @@ body {
   font-family: var(--primary-font);
   background-color: hsl(var(--background-color));
   color: hsl(var(--text-primary));
+  scroll-behavior: smooth;
 }
 
 img {

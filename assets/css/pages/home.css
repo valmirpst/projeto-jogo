@@ -1,0 +1,115 @@
+.home-section {
+  position: relative;
+  padding: 1.5rem 2rem;
+}
+
+.home-section__hero-media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.home-section__hero-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 100vh;
+  object-fit: cover;
+}
+
+.home-section__hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      180deg,
+      hsla(var(--background-color), 0.2) 0%,
+      hsla(var(--background-color), 0.75) 70%,
+      hsla(var(--background-color), 0.95) 100%
+    ),
+    linear-gradient(90deg, hsla(var(--background-color), 0.65) 0%, hsla(var(--background-color), 0.15) 55%);
+  pointer-events: none;
+}
+
+.home-section__content {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+.home-section__sync-tag {
+  color: hsl(30, 100%, 84%);
+  font-size: 0.825rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.15em;
+}
+
+.home-section__title {
+  font-size: 8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  line-height: 1;
+  letter-spacing: -6.5px;
+}
+
+.home-section__subtitle {
+  max-width: 1000px;
+  color: hsl(0, 0%, 80%);
+  font:
+    1.25rem/1.5 var(--primary-font),
+    sans-serif;
+}
+
+.home-section__cta-container {
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.home-section__cta {
+  height: 48px;
+  padding: 0.75rem 1.5rem;
+}
+
+.home-section__secondary-cta {
+  background-color: transparent;
+  border: 1px solid hsl(var(--text-primary), 0.3);
+  color: hsl(var(--text-primary));
+  height: 48px;
+  padding: 0.75rem 1.5rem;
+
+  &:hover {
+    color: hsl(var(--text-primary));
+    background-color: hsl(var(--text-primary), 0.1);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-section {
+    padding: 1rem;
+  }
+
+  .home-section__content {
+    padding: 0 1rem;
+  }
+
+  .home-section__sync-tag {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+  }
+
+  .home-section__title {
+    font-size: 3.5rem;
+    letter-spacing: -3.25px;
+  }
+
+  .home-section__subtitle {
+    font-size: 0.875rem;
+  }
+}

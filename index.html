@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fragmentos do Tempo | TADS 1BM | Integrado</title>
     <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/pages/home.css" />
 
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
   </head>
   <body>
     <header class="header">
@@ -20,7 +22,7 @@
 
       <nav class="header__nav">
         <ul class="header__menu">
-          <li class="header__menu-item--active"><a href="/">INÍCIO</a></li>
+          <li class="header__menu-item--active"><a href="./">INÍCIO</a></li>
           <li><a href="history.html">HISTÓRIA</a></li>
           <li><a href="world.html">MUNDO</a></li>
           <li><a href="characters.html">PERSONAGENS</a></li>
@@ -29,5 +31,28 @@
         <button class="button-base header__cta">JOGAR AGORA</button>
       </nav>
     </header>
+
+    <main>
+      <section class="home-section">
+        <div class="home-section__hero-media">
+          <img src="./assets/images/hero.png" alt="Imagem de destaque do jogo" class="home-section__hero-image" />
+          <div class="home-section__hero-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="home-section__content">
+          <div class="home-section__sync-tag">SINCRONIZAÇÃO TEMPORAL: 98,4%</div>
+          <div>
+            <h1 class="home-section__title">A VIDA EM UM SEGUNDO</h1>
+            <h2 class="home-section__subtitle">
+              Mergulhe nos fragmentos de uma continuidade interrompida. Experimente a brutal precisão da manipulação do
+              tempo em um mundo onde cada milissegundo determina sua existência.
+            </h2>
+          </div>
+          <div class="home-section__cta-container">
+            <button class="button-base header__cta home-section__cta">JOGAR AGORA</button>
+            <a class="button-base home-section__secondary-cta" href="#trailer">ASSISTIR TRAILER</a>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
