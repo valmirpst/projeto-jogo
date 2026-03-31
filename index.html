@@ -36,7 +36,7 @@
       <section class="home-section">
         <div class="home-section__hero-media">
           <img src="./assets/images/hero.png" alt="Imagem de destaque do jogo" class="home-section__hero-image" />
-          <div class="home-section__hero-overlay" aria-hidden="true"></div>
+          <div class="home-section__hero-overlay"></div>
         </div>
         <div class="home-section__content">
           <div class="home-section__sync-tag">SINCRONIZAÇÃO TEMPORAL: 98,4%</div>
@@ -53,6 +53,45 @@
           </div>
         </div>
       </section>
+
+      <section id="trailer" class="trailer-section">
+        <h2 class="trailer-section__title">TRAILER</h2>
+        <div class="trailer-section__video">
+          <video controls autoplay class="trailer-section__video-player">
+            <source src="./assets/videos/trailer.mp4" type="video/mp4" />
+            Seu navegador não suporta a tag de vídeo.
+          </video>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <h2 class="cta-section__title">PRONTO PARA MUDAR O PASSADO?</h2>
+        <p class="cta-section__description">
+          Participe da experiência de jogo mais inovadora do ano e seja o primeiro a navegar pelos fragmentos de uma
+          história interrompida.
+        </p>
+        <div class="home-section__cta-container">
+          <button class="button-base cta-section__try-now">TESTAR AGORA</button>
+          <button class="button-base cta-section__cta">COMPRAR AGORA</button>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <ul class="footer__links">
+          <li>
+            Clique <a href="https://github.com/valmirpst/projeto-jogo" target="_blank">aqui</a> para ver no GitHub
+          </li>
+        </ul>
+        <p class="footer__text">
+          © <span id="current-year"></span>
+          <span>Fragmentos do Tempo. Todos os direitos reservados.</span>
+        </p>
+      </footer>
     </main>
+
+    <script>
+      // Atualiza o ano atual no rodapé
+      document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
