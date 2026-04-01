@@ -19,13 +19,13 @@
 
 ## Experiência do Usuário (Total: 3,00)
 
-- **Personas do produto:** 0,3
+<!-- - **Personas do produto:** 0,3 -->
 
 - **Wireframe / rabisco das páginas:** 0,3
 - **O site atende a persona? (explicar persona e demanda):** 0,4
-  - **Padronizar (consistência visual):** 0,4
-  - **Indicar (botões e links com aparência interativa):** 0,4
-  - **Facilitar (tamanhos, legibilidade, contraste):** 0,4
+  <!-- - **Padronizar (consistência visual):** 0,4 -->
+  <!-- - **Indicar (botões e links com aparência interativa):** 0,4 -->
+  <!-- - **Facilitar (tamanhos, legibilidade, contraste):** 0,4 -->
 - **Alinhar (imagens alinhadas com proposta):** 0,4
 - **Direcionar (ação principal clara):** 0,4
 
@@ -44,12 +44,12 @@
 
 ## Desenvolvimento Web (Total: 3,00)
 
-- **Sprint - Estrutura do site (links e páginas internas):** 0,4
-- **Sprint - Versão preliminar no GitHub Pages:** 0,4
-- **Visual (apresentação agradável):** 0,55
-- **Estrutura (informação clara em páginas/seções):** 0,55
-- **Código (HTML bem indentado; uso adequado de CSS):** 0,55
-- **Responsividade (funciona em dispositivos móveis):** 0,55
+<!-- - **Sprint - Estrutura do site (links e páginas internas):** 0,4 -->
+<!-- - **Sprint - Versão preliminar no GitHub Pages:** 0,4 -->
+<!-- - **Visual (apresentação agradável):** 0,55 -->
+<!-- - **Estrutura (informação clara em páginas/seções):** 0,55 -->
+<!-- - **Código (HTML bem indentado; uso adequado de CSS):** 0,55 -->
+<!-- - **Responsividade (funciona em dispositivos móveis):** 0,55 -->
 
 ---
 
