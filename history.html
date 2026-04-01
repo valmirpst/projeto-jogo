@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>História | Fragmentos do Tempo | TADS 1BM | Integrado</title>
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/pages/history.css" />
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="/" class="header__logo">FRAGMENTOS DO TEMPO</a>
+
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li><a href="./">INÍCIO</a></li>
+          <li class="header__menu-item--active"><a href="history.html">HISTÓRIA</a></li>
+          <li><a href="world.html">MUNDO</a></li>
+          <li><a href="characters.html">PERSONAGENS</a></li>
+        </ul>
+
+        <button class="button-base header__cta">JOGAR AGORA</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="history-section">
+        <div class="history-section__intro">
+          <article class="history-section__overview">
+            <p class="history-section__eyebrow">ARQUIVO TEMPORAL 01</p>
+            <h1 class="history-section__title">O INÍCIO DA RUPTURA</h1>
+            <p class="history-section__lead">
+              Em um futuro distante, a humanidade aprendeu a manipular o tempo e, com isso, abriu caminho para uma
+              descoberta que parecia impossível. O avanço científico trouxe poder, mas também provocou falhas na linha
+              temporal que fragmentaram a realidade em partes instáveis e separaram o próprio tempo em múltiplas
+              versões.
+            </p>
+          </article>
+
+          <aside class="history-section__incident">
+            <p class="history-section__incident-label">SITUAÇÃO ATUAL</p>
+            <ul class="history-incident-list">
+              <li>
+                <span class="history-incident-list__key">Estado da realidade</span>
+                <strong>Fragmentada</strong>
+              </li>
+              <li>
+                <span class="history-incident-list__key">Responsável pela restauração</span>
+                <strong>Rip Hunter, um dos viajantes do tempo</strong>
+              </li>
+              <li>
+                <span class="history-incident-list__key">Objetivo principal</span>
+                <strong>Coletar os fragmentos do tempo</strong>
+              </li>
+            </ul>
+            <p class="history-section__incident-note">
+              Cada fragmento recuperado reduz a instabilidade e aproxima o mundo da sua forma original.
+            </p>
+          </aside>
+        </div>
+
+        <div class="history-section__grid">
+          <article class="history-card history-card--accent">
+            <p class="history-card__label">O PONTO DE RUPTURA</p>
+            <h2 class="history-card__title">Experimentos sucessivos colapsaram a continuidade do mundo.</h2>
+            <p class="history-card__text">
+              O que começou como curiosidade científica se transformou em desastre. A manipulação temporal passou a
+              distorcer cidades, memórias e até o próprio fluxo da realidade, criando zonas instáveis onde o passado e o
+              futuro coexistem ao mesmo tempo.
+            </p>
+          </article>
+
+          <article class="history-card">
+            <p class="history-card__label">A MISSÃO</p>
+            <h2 class="history-card__title">Rip Hunter, um dos viajantes do tempo.</h2>
+            <p class="history-card__text">
+              Ao perceber a dimensão da catástrofe, um dos viajantes do tempo, Rip Hunter, descobre um caminho para
+              reparar a realidade: reunir os fragmentos do tempo espalhados pelos lugares corrompidos.
+            </p>
+          </article>
+
+          <article class="history-card history-card--together">
+            <p class="history-card__label">VERSÕES DE RIP HUNTER</p>
+            <h2 class="history-card__title">Ele não é o único.</h2>
+            <p class="history-card__text">
+              Devido à natureza fragmentada do tempo, múltiplas versões de Rip Hunter existem simultaneamente, cada uma
+              com suas próprias experiências e memórias. Elas se comunicam e colaboram para superar os desafios impostos
+              pela ruptura.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <ul class="footer__links">
+        <li>Clique <a href="https://github.com/valmirpst/projeto-jogo" target="_blank">aqui</a> para ver no GitHub</li>
+      </ul>
+      <p class="footer__text">
+        © <span id="current-year"></span>
+        <span>Fragmentos do Tempo. Todos os direitos reservados.</span>
+      </p>
+    </footer>
+
+    <script>
+      // Atualiza o ano atual no rodapé
+      document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
