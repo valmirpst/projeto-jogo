@@ -27,7 +27,7 @@
   <!-- - **Indicar (botões e links com aparência interativa):** 0,4 -->
   <!-- - **Facilitar (tamanhos, legibilidade, contraste):** 0,4 -->
 - **Alinhar (imagens alinhadas com proposta):** 0,4
-- **Direcionar (ação principal clara):** 0,4
+<!-- - **Direcionar (ação principal clara):** 0,4 -->
 
 ---
 
@@ -38,7 +38,7 @@
 - **Utilização de lógica (programação em JavaScript para ações):** 0,55
 - **Criatividade (enredo e elementos originais):** 0,55
 - **Cenário e animações (dinâmica do jogo):** 0,55
-- **Criar história sobre o jogo (descrição do projeto):** 0,55
+<!-- - **Criar história sobre o jogo (descrição do projeto):** 0,55 -->
 
 ---
 
