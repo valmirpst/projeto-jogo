@@ -178,6 +178,13 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .home-section__title {
+    font-size: 5rem;
+    letter-spacing: -3.25px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .home-section {
     padding: 1rem;
@@ -193,7 +200,7 @@
   }
 
   .home-section__title {
-    font-size: 3.5rem;
+    font-size: 3rem;
     letter-spacing: -3.25px;
   }
 
