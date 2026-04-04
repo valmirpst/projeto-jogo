@@ -102,9 +102,13 @@ body {
   margin-bottom: 0.2rem;
 }
 
-.contact-list p {
+.contact-list a {
   color: hsl(0, 0%, 78%);
   font-size: 0.95rem;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .contact-form-section {
