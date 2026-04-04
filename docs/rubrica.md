@@ -21,11 +21,12 @@
 
 <!-- - **Personas do produto:** 0,3 -->
 
-- **Wireframe / rabisco das páginas:** 0,3
-- **O site atende a persona? (explicar persona e demanda):** 0,4
+<!-- - **Wireframe / rabisco das páginas:** 0,3 -->
+<!-- - **O site atende a persona? (explicar persona e demanda):** 0,4 -->
   <!-- - **Padronizar (consistência visual):** 0,4 -->
   <!-- - **Indicar (botões e links com aparência interativa):** 0,4 -->
   <!-- - **Facilitar (tamanhos, legibilidade, contraste):** 0,4 -->
+
 - **Alinhar (imagens alinhadas com proposta):** 0,4
 <!-- - **Direcionar (ação principal clara):** 0,4 -->
 
@@ -61,7 +62,7 @@
 - **Manipulação de Visibilidade via DOM (uso de `filter: blur`):** 0,45
 - **Interatividade com input de texto (saudação dinâmica):** 0,45
 - **Alternância de Tema (Light/Dark Mode) com botão:** 0,45
-- **Verificação Automatizada de Lançamento (comparar ano e alert):** 0,4
+<!-- - **Verificação Automatizada de Lançamento (comparar ano e alert):** 0,4 -->
 
 ---
 
