@@ -61,14 +61,6 @@
     gap: 1rem;
   }
 
-  .header__menu {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    column-gap: 1.5rem;
-    row-gap: 0.5rem;
-  }
-
   header {
     .header__cta {
       width: 100%;

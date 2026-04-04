@@ -14,7 +14,6 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./assets/css/all.min.css" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
@@ -36,7 +35,77 @@
       </nav>
     </header>
 
-    <main></main>
+    <main>
+      <section class="contact-section">
+        <div class="contact-section__intro">
+          <p class="contact-section__eyebrow">SUPORTE TEMPORAL</p>
+          <h1 class="contact-section__title">FALE CONOSCO</h1>
+          <p class="contact-section__lead">
+            Tem sugestões, dúvidas ou encontrou algo inesperado durante sua jornada? Envie sua mensagem e ajude a
+            melhorar a experiencia de jogo em cada nova fase.
+          </p>
+        </div>
+
+        <div class="contact-section__grid">
+          <article class="contact-card contact-card--highlight card-base">
+            <p class="contact-card__label">ENTRAR EM CONTATO</p>
+            <h2 class="contact-card__title">CANAIS DE COMUNICAÇÃO</h2>
+            <ul class="contact-list">
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                  <strong>Email</strong>
+                  <p>contato@fragmentosdotempo.com</p>
+                </div>
+              </li>
+              <li>
+                <i class="fa-brands fa-github"></i>
+                <div>
+                  <strong>GitHub</strong>
+                  <p>github.com/valmirpst/projeto-jogo</p>
+                </div>
+              </li>
+            </ul>
+          </article>
+        </div>
+
+        <section class="contact-form-section card-base" aria-label="Formulario de contato">
+          <p class="contact-card__label">ENVIAR MENSAGEM</p>
+          <h2 class="contact-form-section__title">Compartilhe sua experiência com a linha do tempo.</h2>
+
+          <form class="contact-form" action="#" method="post">
+            <div class="contact-form__row">
+              <label class="contact-form__field">
+                <span>Nome</span>
+                <input type="text" name="name" placeholder="Seu nome" required />
+              </label>
+
+              <label class="contact-form__field">
+                <span>Email</span>
+                <input type="email" name="email" placeholder="voce@email.com" required />
+              </label>
+            </div>
+
+            <label class="contact-form__field">
+              <span>Assunto</span>
+              <input type="text" name="subject" placeholder="Ex.: sugestao de melhoria" required />
+            </label>
+
+            <label class="contact-form__field">
+              <span>Mensagem</span>
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Conte para a equipe o que voce encontrou durante o jogo."
+                required
+              ></textarea>
+            </label>
+
+            <button type="submit" class="button-base contact-form__submit">ENVIAR MENSAGEM</button>
+          </form>
+        </section>
+      </section>
+    </main>
 
     <footer class="footer">
       <ul class="footer__links">
