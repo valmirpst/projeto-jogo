@@ -14,28 +14,22 @@ body {
   margin: 0 auto;
   padding: 3rem 0 2.5rem;
   display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.9fr);
+  grid-template-columns: 1.35fr 0.9fr;
   gap: 1.5rem;
   align-items: stretch;
 }
 
-.history-section__overview,
-.history-section__incident {
-  border: 1px solid hsla(var(--text-primary), 0.12);
+.history-section__overview {
+  padding: 2rem;
   border-radius: 24px;
   background:
     linear-gradient(180deg, hsla(var(--text-primary), 0.05), hsla(var(--text-primary), 0.02)), rgba(10, 12, 20, 0.82);
-  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
-  backdrop-filter: blur(12px);
-}
-
-.history-section__overview {
-  padding: 2rem;
 }
 
 .history-section__incident {
   padding: 1.75rem;
   align-self: end;
+  border-radius: 24px;
   background: linear-gradient(135deg, hsla(var(--primary-color), 0.18), transparent 45%), rgba(10, 12, 20, 0.9);
 }
 
@@ -49,7 +43,7 @@ body {
 
 .history-section__title {
   max-width: 680px;
-  font-size: clamp(2.6rem, 5vw, 4.8rem);
+  font-size: 4.8rem;
   line-height: 0.98;
   letter-spacing: -0.05em;
   margin-bottom: 1.25rem;
@@ -115,12 +109,6 @@ body {
 .history-card {
   grid-column: span 6;
   padding: 1.75rem;
-  border: 1px solid hsla(var(--text-primary), 0.12);
-  border-radius: 20px;
-  background:
-    linear-gradient(180deg, hsla(var(--text-primary), 0.04), hsla(var(--text-primary), 0.02)), rgba(10, 12, 20, 0.82);
-  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
-  backdrop-filter: blur(12px);
 }
 
 .history-card--accent {
@@ -160,6 +148,10 @@ body {
 
   .history-section__lead {
     font-size: 1rem;
+  }
+
+  .history-section__title {
+    font-size: 2.8rem;
   }
 
   .history-section__overview,

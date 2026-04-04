@@ -12,3 +12,12 @@
   gap: 0.5rem;
   line-height: 1;
 }
+
+.card-base {
+  border: 1px solid hsla(var(--text-primary), 0.12);
+  border-radius: 20px;
+  background:
+    linear-gradient(180deg, hsla(var(--text-primary), 0.04), hsla(var(--text-primary), 0.02)), rgba(10, 12, 20, 0.82);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(12px);
+}
