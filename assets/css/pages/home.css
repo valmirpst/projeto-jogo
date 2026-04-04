@@ -150,6 +150,7 @@
   background-color: transparent;
   border: 1px solid hsl(var(--text-primary), 0.3);
   color: hsl(var(--text-primary));
+  min-width: max-content;
   width: 100%;
   max-width: 240px;
   height: 48px;
