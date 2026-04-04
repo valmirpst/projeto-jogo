@@ -1,8 +1,4 @@
-# Game Design Document (GDD)
-
-## Fragmentos do Tempo
-
----
+# Game Design Document (GDD) | Fragmentos do Tempo
 
 ## 1. Visão Geral
 
@@ -16,8 +12,6 @@
 
 **Resumo do jogo:**
 Um jogo de plataforma 2D onde o jogador controla Rip Hunter, um dos viajantes do tempo, em fases curtas afetadas por distorções temporais. Em um futuro distante, experimentos sucessivos de manipulação do tempo comprometeram a continuidade do mundo, fragmentando a realidade em zonas instáveis. O objetivo é coletar todos os fragmentos do tempo de cada fase para restaurar gradualmente o fluxo temporal. Cada fase dura 1–3 minutos, oferecendo uma experiência leve e progressiva, ideal para pausas rápidas.
-
----
 
 ## 2. Persona & Atendimento
 
@@ -36,8 +30,6 @@ O design atende esses desejos através de:
 - **Mecânicas minimalistas:** Movimento, pulo, coleta (3 ações principais)
 - **Progressão visual clara:** HUD mostra fragmentos coletados e tipo de tempo
 - **Baixa carga cognitiva:** Regras simples, sem sistemas complexos
-
----
 
 ## 3. Mecânicas de Jogo
 
@@ -70,8 +62,6 @@ Coletar todos os fragmentos do tempo disponíveis na fase para avançar automati
 
 • **Condição de derrota:** Encostar em um obstáculo = morte + reinício imediato da fase
 
----
-
 ## 4. Narrativa e Ambientação
 
 **História:**
@@ -87,8 +77,6 @@ Mundo 2D minimalista afetado por distorções temporais, com zonas corrompidas o
 **Personagens principais:**
 
 - **Rip Hunter (personagem do jogador):** Um dos viajantes do tempo responsável pela restauração da linha temporal. Percorre o mundo fragmentado em busca dos fragmentos temporais para reduzir a instabilidade da realidade.
-
----
 
 ## 5. Gameplay (Experiência do Jogador)
 
@@ -109,8 +97,6 @@ Progressivo — Fases iniciais são simples (sem mecânica de tempo) e intermedi
 - Por fase: 1–2 minutos
 - Total (4 fases): 5–8 minutos
 
----
-
 ## 6. Interface (UI/UX)
 
 **Elementos na tela:**
@@ -129,8 +115,6 @@ Progressivo — Fases iniciais são simples (sem mecânica de tempo) e intermedi
   - → : Mover direita
   - ↑ / Espaço : Pular
   - R : Reiniciar fase (opcional)
-
----
 
 ## 7. Arte e Som
 
