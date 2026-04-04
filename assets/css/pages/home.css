@@ -23,14 +23,12 @@
 .home-section__hero-overlay {
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(
-      180deg,
-      hsla(var(--background-color), 0.2) 0%,
-      hsla(var(--background-color), 0.75) 70%,
-      hsla(var(--background-color), 0.95) 100%
-    ),
-    linear-gradient(90deg, hsla(var(--background-color), 0.65) 0%, hsla(var(--background-color), 0.15) 55%);
+  background: linear-gradient(
+    140deg,
+    hsla(var(--background-color), 0.75) 0%,
+    hsla(var(--background-color), 0.45) 45%,
+    hsla(var(--background-color), 0.95) 100%
+  );
   pointer-events: none;
 }
 
@@ -60,9 +58,9 @@
 .home-section__subtitle {
   max-width: 1000px;
   color: hsl(0, 0%, 80%);
-  font:
-    1.25rem/1.5 var(--primary-font),
-    sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-family: var(--primary-font), sans-serif;
 }
 
 .home-section__cta-container {
