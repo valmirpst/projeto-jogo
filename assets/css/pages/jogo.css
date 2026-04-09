@@ -1,0 +1,4 @@
+.game-container {
+  width: 100%;
+  height: calc(100vh - 120px); /* Subtrai a altura do header */
+}

@@ -24,3 +24,14 @@
   box-shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
   backdrop-filter: blur(12px);
 }
+
+a.button-base {
+  text-decoration: none;
+}
+
+a.header__cta,
+a.home-section__cta,
+a.cta-section__cta {
+  color: #000;
+  font-weight: 600;
+}
