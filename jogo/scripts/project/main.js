@@ -56,15 +56,4 @@ function handleRipHunterMovement(ripHunter, runtime) {
         ripHunter.setAnimation(nextAnim, animFromMode);
     }
 }
-function handleRipHunterGhost(ripHunterGhost, runtime) {
-    // Teclas
-    const right = runtime.keyboard.isKeyDown("ArrowRight");
-    const left = runtime.keyboard.isKeyDown("ArrowLeft");
-    if (right) {
-        ripHunterGhost.width = Math.abs(ripHunterGhost.width);
-    }
-    else if (left) {
-        ripHunterGhost.width = -Math.abs(ripHunterGhost.width);
-    }
-}
 export {};
