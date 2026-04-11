@@ -4,11 +4,15 @@
   font-weight: 600;
   cursor: pointer;
   transition: 0.3s ease;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
   line-height: auto;
+  text-decoration: none;
+  transition:
+    background-color 0.2s ease,
+    transform 0.06s ease;
 
   img {
     width: 16px;
@@ -18,7 +22,7 @@
 
 .card-base {
   border: 1px solid hsla(var(--text-primary), 0.12);
-  border-radius: 20px;
+  border-radius: 4px;
   background:
     linear-gradient(180deg, hsla(var(--text-primary), 0.04), hsla(var(--text-primary), 0.02)), rgba(10, 12, 20, 0.82);
   box-shadow: 0 18px 50px rgba(0, 0, 0, 0.28);

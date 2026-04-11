@@ -122,7 +122,8 @@
   width: 100%;
   height: auto;
   border: 1px solid hsl(var(--text-primary), 0.2);
-  border-radius: 8px;
+  border-radius: 4px;
+  overflow: hidden;
 
   video {
     width: 100%;
