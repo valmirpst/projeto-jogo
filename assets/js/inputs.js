@@ -16,7 +16,7 @@ function handleUserInput(askAgain = false) {
   localStorage.setItem("userAge", idade);
 
   // Acesso ao conteúdo sensível
-  if (parseInt(idade) < 16) {
+  if (!idade || isNaN(idade) || parseInt(idade) < 16) {
     alert("Desculpe, alguns conteúdos do site estarão protegidos devido à sua idade (menor de 16 anos).");
 
     const protectedElements = document.getElementsByClassName("protected-content");
