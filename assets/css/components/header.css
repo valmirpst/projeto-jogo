@@ -1,6 +1,6 @@
 .header {
-  background-color: var(--background-color);
-  color: var(--text-primary);
+  background-color: hsl(var(--background-color));
+  color: hsl(var(--text-primary));
   font-family: var(--secondary-font);
   padding: 1.5rem 2rem;
   display: flex;
@@ -21,6 +21,25 @@
   img {
     width: 32px;
     vertical-align: middle;
+  }
+}
+
+.header__toggle-theme-btn {
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+
+  &:hover {
+    background-color: hsl(var(--text-primary), 0.1);
   }
 }
 

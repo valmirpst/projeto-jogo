@@ -1,6 +1,7 @@
 .home-section {
   position: relative;
   padding: 1.5rem 2rem;
+  color: hsl(0, 0%, 100%);
 }
 
 .home-section__hero-media {
@@ -25,11 +26,20 @@
   inset: 0;
   background: linear-gradient(
     140deg,
+    hsla(230, 14%, 8%, 0.45) 0%,
+    hsla(230, 14%, 8%, 0.25) 45%,
+    hsla(230, 14%, 8%, 0.65) 100%
+  );
+  pointer-events: none;
+}
+
+.dark .home-section__hero-overlay {
+  background: linear-gradient(
+    140deg,
     hsla(var(--background-color), 0.75) 0%,
     hsla(var(--background-color), 0.45) 45%,
     hsla(var(--background-color), 0.95) 100%
   );
-  pointer-events: none;
 }
 
 .home-section__content {
@@ -57,7 +67,7 @@
 
 .home-section__subtitle {
   max-width: 1000px;
-  color: hsl(0, 0%, 80%);
+  color: hsl(0, 0%, 90%);
   font-size: 1.25rem;
   line-height: 1.5;
   font-family: var(--primary-font), sans-serif;
@@ -155,9 +165,13 @@
 .cta-section__description {
   max-width: 600px;
   margin: 0 auto 2rem;
-  color: hsl(0, 0%, 80%);
+  color: hsl(0, 0%, 30%);
   font-size: 1.125rem;
   line-height: 1.5;
+}
+
+.dark .cta-section__description {
+  color: hsl(0, 0%, 80%);
 }
 
 .cta-section__try-now {

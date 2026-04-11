@@ -1,4 +1,8 @@
 body {
+  background: linear-gradient(160deg, hsl(220, 45%, 98%) 0%, hsl(214, 38%, 96%) 45%, hsl(210, 35%, 94%) 100%);
+}
+
+.dark body {
   background: linear-gradient(160deg, hsl(230, 18%, 7%) 0%, hsl(232, 22%, 6%) 45%, hsl(230, 14%, 8%) 100%);
 }
 
@@ -29,7 +33,7 @@ body {
 }
 
 .contact-section__lead {
-  color: hsl(0, 0%, 80%);
+  color: hsla(var(--text-primary), 0.78);
   font-size: 1.06rem;
   line-height: 1.65;
 }
@@ -48,7 +52,13 @@ body {
 
 .contact-card--highlight {
   grid-column: span 12;
+  background: linear-gradient(135deg, hsla(var(--primary-color), 0.14), transparent 52%), hsla(var(--background-color), 0.96);
+  border: 1px solid hsla(var(--text-primary), 0.12);
+}
+
+.dark .contact-card--highlight {
   background: linear-gradient(135deg, hsla(var(--primary-color), 0.16), transparent 52%), rgba(10, 12, 20, 0.86);
+  border-color: hsla(var(--text-primary), 0.12);
 }
 
 .contact-card__label {
@@ -66,7 +76,7 @@ body {
 }
 
 .contact-card__text {
-  color: hsl(0, 0%, 80%);
+  color: hsla(var(--text-primary), 0.78);
   line-height: 1.7;
   font-size: 1rem;
 }
@@ -89,12 +99,17 @@ body {
 }
 
 .contact-list img {
-  background-color: #fafafa;
-  outline: 4px solid #000;
+  background-color: hsl(var(--background-color));
+  outline: 4px solid hsla(var(--text-primary), 0.45);
   outline-offset: -1px;
   border-radius: 50%;
   width: 24px;
   height: 24px;
+}
+
+.dark .contact-list img {
+  background-color: #fafafa;
+  outline-color: #000;
 }
 
 .contact-list strong {
@@ -103,7 +118,7 @@ body {
 }
 
 .contact-list a {
-  color: hsl(0, 0%, 78%);
+  color: hsla(var(--text-primary), 0.78);
   font-size: 0.95rem;
 
   &:hover {
@@ -114,7 +129,14 @@ body {
 .contact-form-section {
   padding: 1.75rem;
   background:
+    linear-gradient(180deg, hsla(var(--text-primary), 0.04), hsla(var(--text-primary), 0.02)), hsla(var(--background-color), 0.96);
+  border: 1px solid hsla(var(--text-primary), 0.12);
+}
+
+.dark .contact-form-section {
+  background:
     linear-gradient(180deg, hsla(var(--text-primary), 0.05), hsla(var(--text-primary), 0.02)), rgba(10, 12, 20, 0.82);
+  border-color: hsla(var(--text-primary), 0.12);
 }
 
 .contact-form-section__title {
@@ -139,7 +161,7 @@ body {
 }
 
 .contact-form__field span {
-  color: hsl(0, 0%, 86%);
+  color: hsla(var(--text-primary), 0.86);
   font-size: 0.92rem;
 }
 

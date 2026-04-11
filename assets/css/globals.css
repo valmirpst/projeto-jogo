@@ -5,14 +5,22 @@
 }
 
 :root {
+  --primary-color: 220, 100%, 75%;
+  --primary-color-hover: 220, 100%, 72%;
+
+  --background-color: 0, 0%, 100%;
+  --text-primary: 230, 14%, 8%;
+
+  --primary-font: "Manrope", sans-serif;
+  --secondary-font: "Space Grotesk", sans-serif;
+}
+
+.dark {
   --primary-color: 220, 100%, 80%;
   --primary-color-hover: 220, 100%, 72%;
 
   --background-color: 230, 14%, 8%;
   --text-primary: 0, 0%, 100%;
-
-  --primary-font: "Manrope", sans-serif;
-  --secondary-font: "Space Grotesk", sans-serif;
 }
 
 html {

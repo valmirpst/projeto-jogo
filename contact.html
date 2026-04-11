@@ -20,9 +20,14 @@
   </head>
   <body>
     <header class="header">
-      <a href="index.html" class="header__logo">
-        <img src="./assets/images/logo.png" alt="Logo do jogo" />
-      </a>
+      <div class="header__logo-container">
+        <a href="index.html" class="header__logo">
+          <img src="./assets/images/logo.png" alt="Logo do jogo" />
+        </a>
+        <button onclick="toggleTheme()" class="button-base header__toggle-theme-btn">
+          <img id="theme-icon" src="./assets/images/icons/sun.png" alt="Tema" />
+        </button>
+      </div>
 
       <nav class="header__nav">
         <ul class="header__menu">
@@ -121,5 +126,6 @@
     </footer>
 
     <script src="./assets/js/constants.js"></script>
+    <script src="./assets/js/theme.js"></script>
   </body>
 </html>
