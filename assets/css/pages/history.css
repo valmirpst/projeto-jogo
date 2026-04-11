@@ -24,7 +24,8 @@ body {
   padding: 2rem;
   border-radius: 4px;
   background:
-    linear-gradient(180deg, hsla(var(--text-primary), 0.04), hsla(var(--text-primary), 0.02)), hsla(var(--background-color), 0.96);
+    linear-gradient(180deg, hsla(var(--text-primary), 0.04), hsla(var(--text-primary), 0.02)),
+    hsla(var(--background-color), 0.96);
   border: 1px solid hsla(var(--text-primary), 0.12);
 }
 
@@ -38,7 +39,8 @@ body {
   padding: 1.75rem;
   align-self: end;
   border-radius: 4px;
-  background: linear-gradient(135deg, hsla(var(--primary-color), 0.16), transparent 45%), hsla(var(--background-color), 0.97);
+  background:
+    linear-gradient(135deg, hsla(var(--primary-color), 0.16), transparent 45%), hsla(var(--background-color), 0.97);
   border: 1px solid hsla(var(--text-primary), 0.12);
 }
 
@@ -127,7 +129,8 @@ body {
 
 .history-card--accent {
   grid-column: span 12;
-  background: linear-gradient(135deg, hsla(var(--primary-color), 0.14), transparent 52%), hsla(var(--background-color), 0.96);
+  background:
+    linear-gradient(135deg, hsla(var(--primary-color), 0.14), transparent 52%), hsla(var(--background-color), 0.96);
   border: 1px solid hsla(var(--text-primary), 0.12);
 }
 
@@ -158,7 +161,7 @@ body {
 
 @media screen and (max-width: 900px) {
   .history-section {
-    padding: 1rem 1rem 4rem;
+    padding: 1rem 1.5rem 4rem;
   }
 
   .history-section__intro {

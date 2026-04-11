@@ -52,7 +52,8 @@ body {
 
 .contact-card--highlight {
   grid-column: span 12;
-  background: linear-gradient(135deg, hsla(var(--primary-color), 0.14), transparent 52%), hsla(var(--background-color), 0.96);
+  background:
+    linear-gradient(135deg, hsla(var(--primary-color), 0.14), transparent 52%), hsla(var(--background-color), 0.96);
   border: 1px solid hsla(var(--text-primary), 0.12);
 }
 
@@ -96,6 +97,7 @@ body {
   border-radius: 4px;
   background: hsla(var(--background-color), 0.45);
   border: 1px solid hsla(var(--text-primary), 0.08);
+  word-break: break-word;
 }
 
 .contact-list img {
@@ -129,7 +131,8 @@ body {
 .contact-form-section {
   padding: 1.75rem;
   background:
-    linear-gradient(180deg, hsla(var(--text-primary), 0.04), hsla(var(--text-primary), 0.02)), hsla(var(--background-color), 0.96);
+    linear-gradient(180deg, hsla(var(--text-primary), 0.04), hsla(var(--text-primary), 0.02)),
+    hsla(var(--background-color), 0.96);
   border: 1px solid hsla(var(--text-primary), 0.12);
 }
 
@@ -200,7 +203,7 @@ body {
 
 @media screen and (max-width: 900px) {
   .contact-section {
-    padding: 2rem 1rem 4rem;
+    padding: 2rem 1.5rem 4rem;
   }
 
   .contact-section__grid {

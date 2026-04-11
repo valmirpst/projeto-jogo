@@ -40,6 +40,6 @@ a.button-base {
 a.header__cta,
 a.home-section__cta,
 a.cta-section__cta {
-  color: #000;
+  color: hsl(var(--background-color));
   font-weight: 600;
 }

@@ -27,6 +27,10 @@
         <button onclick="toggleTheme()" class="button-base header__toggle-theme-btn">
           <img id="theme-icon" src="./assets/images/icons/sun.png" alt="Tema" />
         </button>
+        <a href="jogo.html" class="button-base header__cta-mobile">
+          <span>JOGAR AGORA</span>
+          <img src="./assets/images/icons/play.png" alt="Ícone de play" />
+        </a>
       </div>
 
       <nav class="header__nav">
@@ -81,7 +85,7 @@
           <p class="contact-card__label">ENVIAR MENSAGEM</p>
           <h2 class="contact-form-section__title">Compartilhe sua experiência com a linha do tempo.</h2>
 
-          <form class="contact-form" action="#" method="post">
+          <form id="contact-form" class="contact-form" action="#" method="post">
             <div class="contact-form__row">
               <label class="contact-form__field">
                 <span>Nome</span>
@@ -127,5 +131,14 @@
 
     <script src="./assets/js/constants.js"></script>
     <script src="./assets/js/theme.js"></script>
+    <script>
+      // Lógica para lidar com o envio do formulário
+      document.getElementById("contact-form").addEventListener("submit", function (event) {
+        event.preventDefault(); // Só pra evitar que o formulário seja enviado
+
+        alert("Obrigado por entrar em contato! Sua mensagem foi recebida.");
+        this.reset();
+      });
+    </script>
   </body>
 </html>

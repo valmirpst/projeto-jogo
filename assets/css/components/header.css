@@ -76,7 +76,9 @@
   border-bottom: 2px solid hsl(var(--primary-color));
 }
 
-.header__cta {
+.header__cta,
+.header__cta-mobile {
+  color: hsl(var(--background-color));
   background-color: hsl(var(--primary-color));
   padding: 0.75rem 1.5rem;
   height: 40px;
@@ -84,6 +86,10 @@
   &:hover {
     background-color: hsl(var(--primary-color-hover));
   }
+}
+
+.header__cta-mobile {
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -103,6 +109,12 @@
     .header__cta {
       width: 100%;
       display: none;
+    }
+
+    .header__cta-mobile {
+      display: flex;
+      width: 100%;
+      justify-content: center;
     }
   }
 }
