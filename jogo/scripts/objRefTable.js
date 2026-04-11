@@ -12,13 +12,16 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Bullet,
 		C3.Behaviors.Fade,
 		C3.Plugins.Audio,
+		C3.Plugins.Mouse,
 		C3.Plugins.System.Cnds.CompareVar,
 		C3.Plugins.System.Acts.NextPrevLayout,
 		C3.Plugins.System.Acts.SetVar,
+		C3.Plugins.Audio.Acts.Play,
 		C3.Plugins.Sprite.Cnds.OnCollision,
 		C3.Plugins.Sprite.Cnds.CompareY,
 		C3.Behaviors.Bullet.Acts.SetSpeed,
 		C3.Behaviors.Bullet.Acts.SetAngleOfMotion,
+		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.System.Cnds.EveryTick,
 		C3.Plugins.Text.Acts.SetText,
 		C3.Plugins.Sprite.Acts.SetWidth,
@@ -27,7 +30,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Keyboard.Cnds.OnKey,
 		C3.Plugins.System.Acts.RestartLayout,
 		C3.Plugins.System.Acts.ResetGlobals,
-		C3.Plugins.Audio.Acts.Play,
 		C3.Plugins.Sprite.Acts.Destroy,
 		C3.Plugins.Sprite.Acts.SetEffectEnabled,
 		C3.Plugins.System.Acts.Wait,
@@ -44,7 +46,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Cnds.IsBoolInstanceVarSet,
 		C3.Behaviors.Platform.Cnds.IsMoving,
 		C3.Plugins.Sprite.Acts.Spawn,
-		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.System.Acts.SetLayerVisible,
 		C3.Plugins.Sprite.Cnds.CompareInstanceVar,
 		C3.Plugins.Sprite.Cnds.IsOutsideLayout,
@@ -52,10 +53,18 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Exps.X,
 		C3.Plugins.Sprite.Exps.Y,
 		C3.Plugins.Sprite.Acts.SubInstanceVar,
+		C3.Behaviors.Platform.Cnds.OnJump,
 		C3.JavaScriptInEvents.Eventsheetphase02_Event1_Act2,
 		C3.TypeScriptInEvents.Eventsheetphase02_Event1_Act3,
 		C3.Plugins.Sprite.Acts.SetBoolInstanceVar,
-		C3.Behaviors.Fade.Acts.StartFade
+		C3.Behaviors.Fade.Acts.StartFade,
+		C3.Plugins.Mouse.Cnds.IsOverObject,
+		C3.Plugins.Sprite.Acts.SetAnim,
+		C3.Plugins.Mouse.Acts.SetCursor2,
+		C3.Plugins.Sprite.Acts.SetOpacity,
+		C3.Plugins.System.Cnds.Else,
+		C3.Plugins.Mouse.Cnds.OnObjectClicked,
+		C3.Plugins.System.Acts.GoToLayout
 	];
 };
 self.C3_JsPropNameTable = [
@@ -103,6 +112,10 @@ self.C3_JsPropNameTable = [
 	{portal04: 0},
 	{tileDisappearing01: 0},
 	{Audio: 0},
+	{startBackground: 0},
+	{fragmentosDoTempoTitle: 0},
+	{buttonPlay: 0},
+	{Mouse: 0},
 	{fragments: 0},
 	{fragmentsMax: 0}
 ];
@@ -141,5 +154,9 @@ self.InstanceType = {
 	portal03: class extends self.ISpriteInstance {},
 	portal04: class extends self.ISpriteInstance {},
 	tileDisappearing01: class extends self.ISpriteInstance {},
-	Audio: class extends self.IInstance {}
+	Audio: class extends self.IInstance {},
+	startBackground: class extends self.ISpriteInstance {},
+	fragmentosDoTempoTitle: class extends self.ISpriteInstance {},
+	buttonPlay: class extends self.ISpriteInstance {},
+	Mouse: class extends self.IInstance {}
 }
