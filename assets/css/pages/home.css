@@ -63,6 +63,13 @@
   font-family: var(--primary-font), sans-serif;
 }
 
+.home-section__platform {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  color: hsl(0, 0%, 70%);
+}
+
 .home-section__cta-container {
   margin-top: 2.5rem;
   display: flex;
@@ -101,6 +108,12 @@
   font-weight: bold;
   margin: 0 auto 1rem;
   letter-spacing: -2px;
+}
+
+#constants__classification {
+  color: hsl(30, 100%, 84%);
+  font-size: 1.25rem;
+  margin-left: 0.75rem;
 }
 
 .trailer-section__video {

@@ -15,8 +15,6 @@ function handleUserInput(askAgain = false) {
   localStorage.setItem("userName", name);
   localStorage.setItem("userAge", idade);
 
-  console.log(`Nome do usuário: ${name}`);
-  console.log(`Idade do usuário: ${idade}`);
   // Acesso ao conteúdo sensível
   if (parseInt(idade) < 16) {
     alert("Desculpe, alguns conteúdos do site estarão protegidos devido à sua idade (menor de 16 anos).");

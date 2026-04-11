@@ -3,16 +3,25 @@ JavaScript para armazenar informações do jogo e realizar o resgate desses valo
 DOM, sem utilizar dados de outros critérios). */
 
 const gameTitle = "Fragmentos do Tempo";
-const developer = "Valmir Paiva Stachin";
 const platform = "PC";
 const classification = 16;
 const developerWebsite = "https://valmirpst.github.io";
-
 const currentYear = new Date().getFullYear();
 
-document.getElementById("constants__game-title").textContent = gameTitle;
-document.getElementById("constants__platform").textContent = platform;
-document.getElementById("constants__classification").textContent = classification;
-document.getElementById("constants__developer-name").textContent = developer;
-document.getElementById("constants__developer-website").href = developerWebsite;
-document.getElementById("current-year").textContent = currentYear;
+const gameTitleElement = document.getElementById("constants__game-title");
+if (gameTitleElement) gameTitleElement.textContent = gameTitle;
+
+const platformElement = document.getElementById("constants__platform");
+if (platformElement) platformElement.textContent = platform;
+
+const classificationElement = document.getElementById("constants__classification");
+if (classificationElement) classificationElement.innerHTML = `+${classification}`;
+
+const developerWebsiteElement = document.getElementById("constants__developer-website");
+if (developerWebsiteElement) {
+  developerWebsiteElement.href = developerWebsite;
+  developerWebsiteElement.innerHTML = developerWebsite;
+}
+
+const currentYearElement = document.getElementById("current-year");
+if (currentYearElement) currentYearElement.textContent = currentYear;
