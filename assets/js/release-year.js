@@ -1,3 +1,7 @@
+/* Verificação Automatizada de Lançamento (Resgate do ano atual através do sistema via JavaScript para comparação 
+lógica com uma constante de lançamento do jogo; caso os anos sejam iguais, o sistema deve disparar um alert automático 
+de Grande Lançamento). */
+
 function checkReleaseYear() {
   const releaseYear = 2026;
   const currentYear = new Date().getFullYear();
@@ -6,6 +10,4 @@ function checkReleaseYear() {
   }
 }
 
-window.addEventListener("load", () => {
-  checkReleaseYear();
-});
+checkReleaseYear();

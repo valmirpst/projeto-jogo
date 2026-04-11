@@ -20,9 +20,12 @@
   </head>
   <body>
     <header class="header">
-      <a href="index.html" class="header__logo">
-        <img src="./assets/images/logo.png" alt="Logo do jogo" />
-      </a>
+      <div class="header__logo-container">
+        <a href="index.html" class="header__logo">
+          <img src="./assets/images/logo.png" alt="Logo do jogo" />
+        </a>
+        <button id="change-user-info-btn" class="button-base change-user-info-btn">Alterar usuário</button>
+      </div>
 
       <nav class="header__nav">
         <ul class="header__menu">
@@ -47,7 +50,7 @@
         <div class="home-section__content">
           <div class="home-section__sync-tag">SINCRONIZAÇÃO TEMPORAL: 98,4%</div>
           <div>
-            <h1 class="home-section__title">FRAGMENTOS DO TEMPO</h1>
+            <h1 class="home-section__title"><span id="constants__game-title"></span></h1>
             <h2 class="home-section__subtitle">
               A realidade foi dividida por falhas temporais. Controle Rip Hunter, um dos viajantes do tempo, e avance
               por fases curtas para recuperar fragmentos e restaurar a realidade.
@@ -58,15 +61,21 @@
               <span>JOGAR AGORA</span>
               <img src="./assets/images/icons/play.png" alt="Ícone de play" />
             </a>
-            <a class="button-base home-section__secondary-cta" href="#trailer">ASSISTIR TRAILER</a>
+            <a class="button-base home-section__secondary-cta protected-content" href="#trailer">ASSISTIR TRAILER</a>
           </div>
         </div>
       </section>
 
-      <section id="trailer" class="trailer-section">
+      <section id="trailer" class="trailer-section protected-content">
         <h2 class="trailer-section__title">TRAILER</h2>
         <div class="trailer-section__video">
-          <video controls autoplay class="trailer-section__video-player">
+          <video
+            id="trailer-video"
+            src="./assets/videos/game-trailer.mp4"
+            controls
+            autoplay
+            class="trailer-section__video-player protected-content"
+          >
             <source src="./assets/videos/trailer.mp4" type="video/mp4" />
             Seu navegador não suporta a tag de vídeo.
           </video>
@@ -91,14 +100,12 @@
       </ul>
       <p class="footer__text">
         © <span id="current-year"></span>
-        <span>Fragmentos do Tempo. Todos os direitos reservados.</span>
+        <span><span id="constants__game-title"></span>. Todos os direitos reservados.</span>
       </p>
     </footer>
 
+    <script src="./assets/js/constants.js"></script>
     <script src="./assets/js/release-year.js"></script>
-    <script>
-      // Atualiza o ano atual no rodapé
-      document.getElementById("current-year").textContent = new Date().getFullYear();
-    </script>
+    <script src="./assets/js/inputs.js"></script>
   </body>
 </html>

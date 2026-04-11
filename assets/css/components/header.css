@@ -8,6 +8,12 @@
   align-items: center;
 }
 
+.header__logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
 .header__logo {
   font-size: 1.5rem;
   font-weight: bold;
@@ -15,6 +21,19 @@
   img {
     width: 32px;
     vertical-align: middle;
+  }
+}
+
+.change-user-info-btn {
+  background-color: transparent;
+  border: 1px solid hsl(var(--text-primary), 0.3);
+  color: hsl(var(--text-primary));
+  height: 32px;
+  padding: 0 0.75rem;
+
+  &:hover {
+    color: hsl(var(--text-primary));
+    background-color: hsl(var(--text-primary), 0.1);
   }
 }
 
