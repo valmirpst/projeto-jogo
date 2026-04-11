@@ -136,7 +136,9 @@
       document.getElementById("contact-form").addEventListener("submit", function (event) {
         event.preventDefault(); // Só pra evitar que o formulário seja enviado
 
-        alert("Obrigado por entrar em contato! Sua mensagem foi recebida.");
+        const name = this.elements["name"].value;
+
+        alert(`Obrigado por entrar em contato, ${name}! Sua mensagem foi recebida.`);
         this.reset();
       });
     </script>
