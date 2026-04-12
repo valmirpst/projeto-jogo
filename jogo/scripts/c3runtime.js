@@ -1382,16 +1382,16 @@ function or(l, r)
 }
 
 self.C3_ExpressionFuncs = [
+		() => 201,
+		() => 100,
+		() => 270,
+		() => 0,
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			return () => v0.GetValue();
 		},
-		() => 0,
 		() => "",
-		() => 201,
-		() => 100,
-		() => 270,
-		() => -30,
+		() => -18,
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			const v1 = p._GetNode(1).GetVar();
@@ -1408,13 +1408,12 @@ self.C3_ExpressionFuncs = [
 			const n1 = p._GetNode(1);
 			return () => (v0.GetValue() + n1.ExpObject());
 		},
-		() => -8,
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			return () => (v0.GetValue() + 1);
 		},
 		() => "Brightness",
-		() => -20,
+		() => -10,
 		() => -1,
 		() => "1",
 		() => 0.15,
@@ -1429,6 +1428,7 @@ self.C3_ExpressionFuncs = [
 			const n0 = p._GetNode(0);
 			return () => n0.ExpObject();
 		},
+		() => -8,
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			const v1 = p._GetNode(1).GetVar();
@@ -1450,9 +1450,30 @@ self.C3_ExpressionFuncs = [
 			const n0 = p._GetNode(0);
 			return () => (n0.ExpObject() + 80);
 		},
+		() => 0.5,
 		() => "Hover",
 		() => 80,
-		() => "Default"
+		() => "Default",
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			const v1 = p._GetNode(1).GetVar();
+			const v2 = p._GetNode(2).GetVar();
+			const v3 = p._GetNode(3).GetVar();
+			const f4 = p._GetNode(4).GetBoundMethod();
+			const f5 = p._GetNode(5).GetBoundMethod();
+			return () => ((((v0.GetValue()) > (94) ? 1 : 0)) ? (((v1.GetValue() + 100) - v2.GetValue())) : ((v3.GetValue() + f4(f5(4)))));
+		},
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			const n1 = p._GetNode(1);
+			return () => ((v0.GetValue() / 100) * n1.ExpObject());
+		},
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => and(v0.GetValue(), "%");
+		},
+		() => "victory",
+		() => 85
 ];
 
 

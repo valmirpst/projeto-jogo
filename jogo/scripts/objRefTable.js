@@ -13,14 +13,14 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Fade,
 		C3.Plugins.Audio,
 		C3.Plugins.Mouse,
-		C3.Plugins.System.Cnds.CompareVar,
-		C3.Plugins.System.Acts.NextPrevLayout,
-		C3.Plugins.System.Acts.SetVar,
-		C3.Plugins.Audio.Acts.Play,
 		C3.Plugins.Sprite.Cnds.OnCollision,
 		C3.Plugins.Sprite.Cnds.CompareY,
 		C3.Behaviors.Bullet.Acts.SetSpeed,
 		C3.Behaviors.Bullet.Acts.SetAngleOfMotion,
+		C3.Plugins.System.Cnds.CompareVar,
+		C3.Plugins.System.Acts.NextPrevLayout,
+		C3.Plugins.System.Acts.SetVar,
+		C3.Plugins.Audio.Acts.Play,
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.System.Cnds.EveryTick,
 		C3.Plugins.Text.Acts.SetText,
@@ -54,6 +54,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Exps.Y,
 		C3.Plugins.Sprite.Acts.SubInstanceVar,
 		C3.Behaviors.Platform.Cnds.OnJump,
+		C3.Behaviors.Platform.Acts.SimulateControl,
 		C3.JavaScriptInEvents.Eventsheetphase02_Event1_Act2,
 		C3.TypeScriptInEvents.Eventsheetphase02_Event1_Act3,
 		C3.Plugins.Sprite.Acts.SetBoolInstanceVar,
@@ -64,7 +65,11 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.SetOpacity,
 		C3.Plugins.System.Cnds.Else,
 		C3.Plugins.Mouse.Cnds.OnObjectClicked,
-		C3.Plugins.System.Acts.GoToLayout
+		C3.Plugins.System.Acts.GoToLayout,
+		C3.Plugins.System.Exps.int,
+		C3.Plugins.System.Exps.random,
+		C3.Plugins.System.Cnds.TriggerOnce,
+		C3.Plugins.Audio.Acts.Stop
 	];
 };
 self.C3_JsPropNameTable = [
@@ -116,8 +121,18 @@ self.C3_JsPropNameTable = [
 	{fragmentosDoTempoTitle: 0},
 	{buttonPlay: 0},
 	{Mouse: 0},
+	{restoringTimelineText: 0},
+	{restoringTimelineExternalBar: 0},
+	{restoringTimelinePercentageText: 0},
+	{restoringTimelineInternalBar: 0},
+	{backgroundEndGame: 0},
+	{arrowleftdirectionwhiteicon: 0},
+	{playAgainButton: 0},
+	{goToStartButton: 0},
+	{timelineRestoredText: 0},
 	{fragments: 0},
-	{fragmentsMax: 0}
+	{fragmentsMax: 0},
+	{restoringTimelineBarProgress: 0}
 ];
 
 self.InstanceType = {
@@ -158,5 +173,14 @@ self.InstanceType = {
 	startBackground: class extends self.ISpriteInstance {},
 	fragmentosDoTempoTitle: class extends self.ISpriteInstance {},
 	buttonPlay: class extends self.ISpriteInstance {},
-	Mouse: class extends self.IInstance {}
+	Mouse: class extends self.IInstance {},
+	restoringTimelineText: class extends self.ITextInstance {},
+	restoringTimelineExternalBar: class extends self.ISpriteInstance {},
+	restoringTimelinePercentageText: class extends self.ITextInstance {},
+	restoringTimelineInternalBar: class extends self.ISpriteInstance {},
+	backgroundEndGame: class extends self.ISpriteInstance {},
+	arrowleftdirectionwhiteicon: class extends self.ISpriteInstance {},
+	playAgainButton: class extends self.ISpriteInstance {},
+	goToStartButton: class extends self.ISpriteInstance {},
+	timelineRestoredText: class extends self.ISpriteInstance {}
 }
