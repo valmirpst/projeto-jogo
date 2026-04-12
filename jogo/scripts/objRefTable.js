@@ -13,6 +13,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Fade,
 		C3.Plugins.Audio,
 		C3.Plugins.Mouse,
+		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.Sprite.Cnds.OnCollision,
 		C3.Plugins.Sprite.Cnds.CompareY,
 		C3.Behaviors.Bullet.Acts.SetSpeed,
@@ -21,7 +22,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.NextPrevLayout,
 		C3.Plugins.System.Acts.SetVar,
 		C3.Plugins.Audio.Acts.Play,
-		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.System.Cnds.EveryTick,
 		C3.Plugins.Text.Acts.SetText,
 		C3.Plugins.Sprite.Acts.SetWidth,
@@ -55,6 +55,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.SubInstanceVar,
 		C3.Behaviors.Platform.Cnds.OnJump,
 		C3.Behaviors.Platform.Acts.SimulateControl,
+		C3.Behaviors.Bullet.Exps.AngleOfMotion,
 		C3.JavaScriptInEvents.Eventsheetphase02_Event1_Act2,
 		C3.TypeScriptInEvents.Eventsheetphase02_Event1_Act3,
 		C3.Plugins.Sprite.Acts.SetBoolInstanceVar,
@@ -130,6 +131,9 @@ self.C3_JsPropNameTable = [
 	{playAgainButton: 0},
 	{goToStartButton: 0},
 	{timelineRestoredText: 0},
+	{Sprite2: 0},
+	{tileAside02: 0},
+	{tileAsideWall: 0},
 	{fragments: 0},
 	{fragmentsMax: 0},
 	{restoringTimelineBarProgress: 0}
@@ -182,5 +186,8 @@ self.InstanceType = {
 	arrowleftdirectionwhiteicon: class extends self.ISpriteInstance {},
 	playAgainButton: class extends self.ISpriteInstance {},
 	goToStartButton: class extends self.ISpriteInstance {},
-	timelineRestoredText: class extends self.ISpriteInstance {}
+	timelineRestoredText: class extends self.ISpriteInstance {},
+	Sprite2: class extends self.ISpriteInstance {},
+	tileAside02: class extends self.ISpriteInstance {},
+	tileAsideWall: class extends self.ISpriteInstance {}
 }
